@@ -48,8 +48,8 @@
 // }
 
 // api/items/itemList.js
-import connectToDatabase from '../../server/utils/db.js';
-import Item from '../../server/models/Item.js';
+import connectToDatabase from '../server/utils/db.js';
+import Item from '../server/models/Item.js';
 
 export default async function handler(req, res) {
   // Set CORS headers for all responses
