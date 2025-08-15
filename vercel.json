@@ -28,10 +28,6 @@
         "Access-Control-Allow-Headers": "X-Requested-With, Content-Type, Authorization"
       }
     },
-    {
-      "src": "/api/items/itemList",
-      "methods": ["GET"],
-      "dest": "/api/items/itemList.js"
-    }
+
   ]
 }
