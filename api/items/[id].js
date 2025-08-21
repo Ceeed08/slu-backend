@@ -81,6 +81,7 @@ import Item from '../../server/models/Item.js';
 import mongoose from 'mongoose';
 
 export default async function handler(req, res) {
+  console.log(`Received request with method: ${req.method} and URL: ${req.url}`);
   // Set CORS headers to allow specific methods
   res.setHeader('Access-Control-Allow-Origin', 'https://www.slu-laboratory-resources.engineering');
   res.setHeader('Access-Control-Allow-Methods', 'GET, PUT, DELETE, OPTIONS');
