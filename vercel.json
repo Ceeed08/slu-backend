@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    {
+      "source": "/api/get-users",
+      "destination": "/api/get-users.js"
+    }
+  ]
+}
