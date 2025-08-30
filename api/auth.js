@@ -173,7 +173,7 @@ export default async function handler(req, res) {
   res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, OPTIONS');
   res.setHeader('Access-Control-Allow-Headers', 'X-Requested-With, Content-Type, Authorization');
 
-  // Handle preflight OPTIONS request
+  // Handle preflight OPTIONS reques
   if (req.method === 'OPTIONS') {
     return res.status(200).end();
   }
