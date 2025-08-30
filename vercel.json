@@ -1,4 +1,15 @@
 {
+  "headers": [
+    {
+      "source": "/api/get-users",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "application/json"
+        }
+      ]
+    }
+  ],
   "rewrites": [
     {
       "source": "/api/get-users",
