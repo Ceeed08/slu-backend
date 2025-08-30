@@ -2,8 +2,8 @@ import { IncomingForm } from 'formidable';
 import { put } from '@vercel/blob';
 import QRCode from 'qrcode';
 import fs from 'fs'; // We still need this for createReadStream
-import Item from "../../server/models/Item";
-import connectDB from "../../server/utils/db.js";
+import Item from "../models/Item";
+import connectDB from "../utils/db.js";
 
 // IMPORTANT: This configuration tells Vercel to disable its default
 // body parser for this route. Essential for 'formidable' to work.
