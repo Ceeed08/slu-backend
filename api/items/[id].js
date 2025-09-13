@@ -239,8 +239,8 @@
 //     return res.status(405).json({ success: false, msg: `Method ${req.method} Not Allowed` });
 //   }
 // }
-import connectToDatabase from '../../server/utils/db.js';
-import Item from '../../server/models/Item.js';
+import connectToDatabase from '../utils/db.js';
+import Item from '../models/Item.js';
 import mongoose from 'mongoose';
 
 export default async function handler(req, res) {
