@@ -1,15 +1,6 @@
 {
   "headers": [
     {
-      "source": "/api/get-users",
-      "headers": [
-        {
-          "key": "Content-Type",
-          "value": "application/json"
-        }
-      ]
-    },
-    {
       "source": "/api/(.*)",
       "headers": [
         { "key": "Access-Control-Allow-Credentials", "value": "true" },
@@ -23,6 +14,10 @@
     {
       "source": "/api/get-users",
       "destination": "/api/get-users.js"
+    },
+    {
+      "source": "/api/update-user/:id",
+      "destination": "/api/update-user.js"
     }
   ]
 }
