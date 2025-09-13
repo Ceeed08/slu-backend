@@ -285,8 +285,8 @@
 //   }
 // }
 
-import connectToDatabase from '../utils/db.js';
-import User from '../models/User.js';
+import connectToDatabase from './utils/db.js';
+import User from './models/User.js';
 
 export default async function handler(req, res) {
   // Set specific CORS headers. This is a failsafe but the vercel.json is the source of truth.
