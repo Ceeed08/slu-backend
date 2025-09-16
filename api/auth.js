@@ -345,11 +345,14 @@ export default async function handler(req, res) {
     const userPlain = user.toObject();
 
     const userDetails = {
+      _id: userPlain._id,
       email: userPlain.email,
       firstName: userPlain.firstName,
       lastName: userPlain.lastName,
       address: userPlain.address,
-      contactNumber: userPlain.contactNumber
+      contactNumber: userPlain.contactNumber,
+      isAdmin: userPlain.isAdmin,
+      isSuperAdmin: userPlain.isSuperAdmin
     };
     // Success
     return res.status(200).json({ msg: 'Login successful', user: userDetails });
