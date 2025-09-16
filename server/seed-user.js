@@ -40,12 +40,14 @@ async function seedUser() {
 
   const hashedPassword = await bcrypt.hash('!Adm1n-P@$$w0rd#', 10);
   const newUser = new User({
-    email: 'admin@admin',
+    email: 'admin',
     password: hashedPassword,
     firstName: 'slu-admin',
     lastName: 'slu-admin',
     address: 'slu-admin',
-    contactNumber: '09123456789'
+    contactNumber: '09123456789',
+    isAdmin: false,
+    isSuperAdmin: true
   });
 
   await newUser.save();
@@ -53,4 +55,4 @@ async function seedUser() {
   process.exit();
 }
 
-migrate();
+seedUser();

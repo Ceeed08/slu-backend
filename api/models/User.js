@@ -23,6 +23,12 @@ const UserSchema = new mongoose.Schema({
   },
   contactNumber: {
     type: String
+  },
+  isAdmin: {
+    type: Boolean
+  },
+  isSuperAdmin: {
+    type: Boolean
   }
 });
 
