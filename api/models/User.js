@@ -18,12 +18,6 @@ const UserSchema = new mongoose.Schema({
     type: String,
     required: true
   },
-  address: {
-    type: String,
-  },
-  contactNumber: {
-    type: String
-  },
   isAdmin: {
     type: Boolean
   },
