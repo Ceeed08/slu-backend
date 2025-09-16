@@ -60,7 +60,7 @@
 
 const mongoose = require('mongoose');
 const bcrypt = require('bcryptjs');
-const User = require('../api/models/User').default; // Adjust path as needed
+const User = require('./models/User').default; // Adjust path as needed
 require('dotenv').config();
 
 const path = require('path');
