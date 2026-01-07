@@ -307,7 +307,8 @@ import bcrypt from 'bcryptjs';
 
 export default async function handler(req, res) {
   // Set CORS headers for all responses
-  res.setHeader('Access-Control-Allow-Origin', 'https://slu-laboratory-resources-engineerin.vercel.app');
+  //slu-laboratory-resources-engineerin.vercel.app
+  res.setHeader('Access-Control-Allow-Origin', 'https://www.slu-laboratory-resources.engineering');
   res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, OPTIONS');
   res.setHeader('Access-Control-Allow-Headers', 'X-Requested-With, Content-Type, Authorization');
 
